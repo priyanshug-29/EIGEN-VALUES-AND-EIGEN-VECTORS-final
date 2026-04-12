@@ -209,35 +209,35 @@ header {
 </main>
 <script>
 const questions=[
- {q:"Eigenvectors of distinct eigenvalues are?",o:["Linearly independent","Parallel","Equal","Zero"],a:0,
-  exp:"Eigenvectors corresponding to distinct eigenvalues are always linearly independent."},
+ {q:"If AX = λX, then λ is called?",o:["Eigenvalue","Eigenvector","Determinant","Trace"],a:0,
+  exp:"λ is the scalar that scales the vector X ⇒ eigenvalue."},
 
- {q:"Calculator helps mainly to?",o:["Reduce algebra errors","Skip theory","Avoid vectors","Change matrix"],a:0,
-  exp:"The calculator helps reduce manual calculation errors in eigenvalue problems."},
+ {q:"Which equation is used to find eigenvalues?",o:["det(A − λI) = 0","A² = I","AX = 0","A + I = 0"],a:0,
+  exp:"Characteristic equation det(A − λI) = 0 gives eigenvalues."},
 
- {q:"Eigenvalues determine?",o:["System behaviour","Sorting","Searching","Hashing"],a:0,
-  exp:"Eigenvalues help analyze system behaviour such as stability and dynamics."},
+ {q:"Eigenvalues of matrix [2 0;0 3] are?",o:["2,3","0,0","5,6","1,1"],a:0,
+  exp:"For diagonal matrix, eigenvalues are diagonal elements."},
 
- {q:"Eigenvalues 3 and −1 → trace?",o:["2","−3","3","−1"],a:0,
-  exp:"Trace of a matrix is the sum of eigenvalues → 3 + (−1) = 2."},
+ {q:"If eigenvalues are 2 and 5, then trace is?",o:["7","10","3","2"],a:0,
+  exp:"Trace = sum of eigenvalues ⇒ 2 + 5 = 7."},
 
- {q:"Eigenvalues 2 and 5 → determinant?",o:["10","7","3","0"],a:0,
-  exp:"Determinant equals product of eigenvalues → 2 × 5 = 10."},
+ {q:"If eigenvalues are 2 and 5, determinant is?",o:["10","7","3","0"],a:0,
+  exp:"Determinant = product ⇒ 2 × 5 = 10."},
 
- {q:"All eigenvalues positive → system?",o:["Stable","Unstable","Oscillatory","Singular"],a:0,
-  exp:"If all eigenvalues are positive, the system is stable."},
+ {q:"If λ = 0 is an eigenvalue, matrix is?",o:["Singular","Identity","Orthogonal","Diagonal"],a:0,
+  exp:"Zero eigenvalue ⇒ determinant = 0 ⇒ singular matrix."},
 
- {q:"Complex eigenvalues indicate?",o:["Oscillation","Stability","Zero","Diagonal"],a:0,
-  exp:"Complex eigenvalues usually indicate oscillatory behaviour."},
+ {q:"Eigenvectors corresponding to distinct eigenvalues are?",o:["Linearly independent","Parallel","Zero","Equal"],a:0,
+  exp:"They are always linearly independent."},
 
- {q:"Eigenvalues 1,1,1 suggest?",o:["Identity-type","Zero","Singular","Rectangular"],a:0,
-  exp:"All eigenvalues equal to 1 often indicate identity-like matrix behaviour."},
+ {q:"Number of eigenvalues of 3×3 matrix?",o:["3","1","9","Depends"],a:0,
+  exp:"Equal to order of matrix ⇒ 3 eigenvalues."},
 
- {q:"Eigenvectors represent?",o:["Invariant directions","Random","Rows","Columns"],a:0,
-  exp:"Eigenvectors represent directions that do not change under transformation."},
+ {q:"If v is an eigenvector, then kv (k ≠ 0) is?",o:["Also eigenvector","Zero vector","Not eigenvector","Random"],a:0,
+  exp:"Scaling does not change eigenvector direction."},
 
- {q:"Scaling eigenvector changes?",o:["Nothing","Eigenvalue","Direction","Order"],a:0,
-  exp:"Scaling an eigenvector does not change its direction or eigenvalue."}
+ {q:"Eigenvalues of identity matrix I are?",o:["1","0","Depends","−1"],a:0,
+  exp:"All eigenvalues of identity matrix are 1."}
 ];
 
 let i=0,score=0;
@@ -287,7 +287,6 @@ function showResult(){
 
 load();
 </script>
-
 </body>
 </html>
 
