@@ -305,3 +305,77 @@ header {
   transform: translateX(-4px);
   box-shadow: 0 10px 22px rgba(0,0,0,0.25);
 }
+
+
+/* ===== MOBILE IMPROVEMENTS ===== */
+
+/* Prevent overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Better grid for mobile */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        flex-direction: column;
+        text-align: center;
+        padding: 18px;
+    }
+
+    .avatar {
+        width: 90px;
+        height: 90px;
+        margin: auto;
+    }
+}
+
+/* Header stacking */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .logo-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .pcce-logo-container {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .user-info {
+        align-self: flex-end;
+    }
+}
+
+/* Smaller screens */
+@media (max-width: 480px) {
+
+    .section-title h2 {
+        font-size: 22px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .virtual-labs-logo h1 {
+        font-size: 20px;
+    }
+}
